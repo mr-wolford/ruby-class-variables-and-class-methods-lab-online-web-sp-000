@@ -36,6 +36,7 @@ attr_accessor :name, :artist, :genre
       else
         @@genre[genre]
       end
+    end
   end
 
   def artist_count
