@@ -32,7 +32,10 @@ attr_accessor :name, :artist, :genre
   def self.genre_count
     @@genre.map do |genre|
       if @@genre.include?(genre)
-        @@genre[genre] = +=1
+        @@genre[genre] + 1
+      else
+        @@genre[genre]
+      end
   end
 
   def artist_count
